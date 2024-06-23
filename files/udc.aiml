@@ -1,5 +1,5 @@
 <aiml version="2.0">
-    <!-- Greetings with personalization -->
+    <!-- Greetings -->
     <category>
         <pattern>HELLO</pattern>
         <template>
@@ -19,19 +19,29 @@
             </condition>
         </template>
     </category>
+    
+    <category>
+        <pattern>XIN CHÀO</pattern>
+        <template>
+            <condition name="username">
+                <li value="unknown">Chào bạn! Bạn tên gì nhỉ?</li>
+                <li>Chào <get name="username"/>! Bạn cần hỗ trợ gì từ chúng tôi?</li>
+            </condition>
+        </template>
+    </category>
 
     <category>
-        <pattern>GOOD MORNING</pattern>
+        <pattern>* MORNING</pattern>
         <template>Chào buổi sáng! Tôi có thể giúp gì cho bạn hôm nay?</template>
     </category>
 
     <category>
-        <pattern>GOOD AFTERNOON</pattern>
+        <pattern>* AFTERNOON</pattern>
         <template>Chào buổi chiều! Bạn cần hỗ trợ gì từ chúng tôi?</template>
     </category>
 
     <category>
-        <pattern>GOOD EVENING</pattern>
+        <pattern>* EVENING</pattern>
         <template>Chào buổi tối! Tôi có thể giúp gì cho bạn?</template>
     </category>
 
@@ -41,7 +51,6 @@
             <random>
                 <li>Xin chào! Chúng tôi có thể giúp gì cho bạn?</li>
                 <li>Chào bạn! Cần mình hỗ trợ gì không?</li>
-                <li>Ê! Có gì mình giúp được không?</li>
             </random>
         </template>
     </category>
@@ -85,7 +94,7 @@
         </template>
     </category>
 
-    <!-- Room Booking -->
+    <!-- Booking -->
     <category>
         <pattern>BOOK A ROOM</pattern>
         <template>
@@ -266,6 +275,16 @@
 
     <category>
         <pattern>LATE CHECK-OUT</pattern>
+        <template>Trả phòng muộn có thể được sắp xếp tùy thuộc vào tình trạng phòng. Vui lòng liên hệ lễ tân để biết thêm chi tiết.</template>
+    </category>
+    
+    <category>
+        <pattern>NHẬN PHÒNG SỚM</pattern>
+        <template>Nhận phòng sớm phụ thuộc vào tình trạng phòng trống. Vui lòng liên hệ trực tiếp với chúng tôi để kiểm tra khả năng này.</template>
+    </category>
+
+    <category>
+        <pattern>TRẢ PHÒNG TRỄ</pattern>
         <template>Trả phòng muộn có thể được sắp xếp tùy thuộc vào tình trạng phòng. Vui lòng liên hệ lễ tân để biết thêm chi tiết.</template>
     </category>
 
