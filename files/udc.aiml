@@ -99,7 +99,7 @@
         <pattern>BOOK A ROOM</pattern>
         <template>
             <think><set name="topic">booking</set></think>
-            Được thôi! Bạn muốn đặt phòng cho mấy người vậy?
+            Vâng! Bạn muốn đặt phòng cho mấy người vậy?
         </template>
     </category>
 
@@ -168,7 +168,7 @@
             <pattern>TỪ NGÀY *</pattern>
             <template>
                 <think><set name="checkin"><star/></set></think>
-                Và bạn sẽ ở đến ngày nào?
+                 Và bạn sẽ ở đến ngày nào?
             </template>
         </category>
         
@@ -390,6 +390,11 @@
     <category>
         <pattern>LOẠI PHÒNG</pattern>
         <template>Chúng tôi cung cấp Phòng Đơn, Phòng Đôi, Phòng Gia đình và Phòng Suite. Bạn muốn biết thêm về loại phòng nào?</template>
+    </category>
+    
+    <category>
+        <pattern>CHO TÔI XEM LOẠI PHÒNG</pattern>
+        <template>Chúng tôi có các loại phòng: Phòng Đơn, Phòng Đôi, Phòng Gia đình và Phòng Suite. Bạn quan tâm đến loại phòng nào?</template>
     </category>
 
     <!-- Dining Options -->
